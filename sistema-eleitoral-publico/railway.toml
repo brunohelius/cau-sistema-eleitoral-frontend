@@ -1,0 +1,19 @@
+[build]
+builder = "nixpacks"
+
+[build.nixpacksPlan]
+providers = ["node"]
+nixPkgs = ["nodejs-18_x", "npm-9_x"]
+
+[build.nixpacksPlan.phases.install]
+cmds = ["npm ci"]
+
+[build.nixpacksPlan.phases.build]
+cmds = ["npm run build"]
+
+[deploy]
+startCommand = "npm run preview -- --port $PORT --host 0.0.0.0"
+restartPolicyType = "always"
+
+[env]
+NODE_ENV = "production"
