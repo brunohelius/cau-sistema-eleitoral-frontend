@@ -59,7 +59,7 @@ import {
   julgarPrimeiraInstancia,
   julgarSegundaInstancia,
 } from '../../store/slices/denunciasSlice';
-import { Denuncia, DenunciaStatus } from '../types/denuncias.types';
+import { Denuncia, DenunciaStatus } from '../../types/denuncias.types';
 
 interface ComplaintWorkflowProps {
   denuncia: Denuncia;
@@ -325,8 +325,8 @@ export const ComplaintWorkflow: FC<ComplaintWorkflowProps> = ({
   };
 
   const renderActionDialog = () => {
-    let form;
-    let onSubmit;
+    let form: any;
+    let onSubmit: any;
 
     switch (dialogType) {
       case 'admissibilidade':
@@ -591,20 +591,20 @@ export const ComplaintWorkflow: FC<ComplaintWorkflowProps> = ({
               <div>
                 {denuncia.processoJudicial?.fases?.map((fase, index) => (
                   <div key={fase.id}>
-                    <div
+                    <Typography
                       sx={{ m: 'auto 0' }}
                       align="right"
                       variant="body2"
                       color="text.secondary"
                     >
                       {fase.dataFim && format(parseISO(fase.dataFim), 'dd/MM/yyyy HH:mm', { locale: ptBR })}
-                    </div>
+                    </Typography>
                     <div>
                       <div>
                         <AccessTime />
                       </div>
                       {index < (denuncia.processoJudicial?.fases?.length || 0) - 1 && (
-                        
+                        <div />
                       )}
                     </div>
                     <div>

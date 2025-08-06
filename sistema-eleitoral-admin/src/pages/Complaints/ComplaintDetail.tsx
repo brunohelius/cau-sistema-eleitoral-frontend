@@ -416,7 +416,7 @@ export const ComplaintDetail: React.FC = () => {
                   <div>
                     {index === 0 && <CheckCircle />}
                   </div>
-                  {index < history.length - 1 && }
+                  {index < history.length - 1 && <div />}
                 </div>
                 <div>
                   <Card variant="outlined" sx={{ mb: 2 }}>

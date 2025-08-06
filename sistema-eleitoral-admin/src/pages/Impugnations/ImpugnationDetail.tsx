@@ -608,7 +608,7 @@ export const ImpugnationDetail: React.FC = () => {
                   <div>
                     {getTimelineIcon(event.status)}
                   </div>
-                  {index < impugnation.timeline.length - 1 && }
+                  {index < impugnation.timeline.length - 1 && <div />}
                 </div>
                 <div>
                   <Box sx={{ mb: 2 }}>

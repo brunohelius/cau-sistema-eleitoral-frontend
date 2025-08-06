@@ -76,9 +76,8 @@ src/
 ### Instalação
 
 ```bash
-# Clone o repositório
-git clone <repository-url>
-cd Eleitoral-Admin-React
+# Navegue até o diretório do projeto
+cd /Users/brunosouza/Documents/Development/AI\ POC/eleitoral-react-net-v2/frontend/sistema-eleitoral-admin
 
 # Instale as dependências
 npm install
@@ -87,6 +86,19 @@ npm install
 cp .env.example .env
 # Edite o arquivo .env com suas configurações
 ```
+
+### 📋 Informações do Projeto
+
+#### 🗂️ **Localização**
+- **Caminho**: `/Users/brunosouza/Documents/Development/AI POC/eleitoral-react-net-v2/frontend/sistema-eleitoral-admin`
+- **Tipo**: Frontend Administrativo React
+- **Porta**: 3000 (padrão) / 3001 (configurada)
+
+#### 👤 **Usuário de Teste**
+- **Username**: `brunohelius`
+- **Email**: `brunohelius@gmail.com`
+- **Role**: `Administrator`
+- **Senha**: Configurar no primeiro acesso
 
 ### Execução
 

@@ -27,7 +27,7 @@ import {
 import {
   ArrowBack,
   Edit,
-  Calendar,
+  CalendarMonth,
   People,
   Assessment,
   Visibility,
@@ -219,7 +219,7 @@ export const ElectionDetail: React.FC = () => {
           />
           <Tab
             label="Calendário"
-            icon={<Calendar />}
+            icon={<CalendarMonth />}
             iconPosition="start"
           />
           <Tab
